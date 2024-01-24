@@ -1,0 +1,145 @@
+
+nav {
+    list-style-type: none;
+    overflow: hidden;
+    background: #333;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+    margin-top: auto;
+}
+
+.content-item {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.rental-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    display: grid;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #206255;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured {
+    background-color: #206255;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+figcaption {
+    font-weight: bold
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.grid-vertical {
+    grid-template-columns: 100px 100px;
+    display: grid;
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    margin: 50px auto 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+}
+
+input {
+    color: #ffffff;
+    background-color: #161F27FF;
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: 12px;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 6px;
+}
+
+.cityProvince {
+    margin: auto 0;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.rental-image {
+    object-fit: contain;
+}
+
+.blurry {
+    filter: blur(5px);
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #206255;
+    color: #0d223b;
+    padding: 20px;
+}
+
+.button {
+    padding: 15px 30px;
+    background: #0d223b;
+    color: #206255;
+    border-radius: 12px;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    background: #333;
+}

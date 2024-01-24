@@ -1,0 +1,47 @@
+<div class="container" style="margin-bottom: 30px;background: #206255">
+
+    <form method="post" action="/sign-up" id="signUp">
+        <h2>Sign Up</h2>
+        <h3>Create your account by entering your email address and choosing a password.</h3>
+
+        <div class="form-group">
+            <label for="firstName"></label>
+            <input type="text" placeholder="First Name" id="firstName" name="firstName" class="form-control"
+                   value="<%= values.firstName %>">
+            <% if (validationMessages.firstName) { %>
+                <span style="color: red;"><%= validationMessages.firstName %></span><br>
+            <% } %>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName"></label>
+            <input type="text" placeholder="Last Name" id="lastName" name="lastName" class="form-control"
+                   value="<%= values.lastName %>">
+            <% if (validationMessages.lastName) { %>
+                <span style="color: red;"><%= validationMessages.lastName %></span><br>
+            <% } %>
+        </div>
+
+        <div class="form-group">
+            <label for="emailAddress"></label>
+            <input type="text" placeholder="Email Address" id="emailAddress" name="emailAddress" class="form-control"
+                   value="<%= values.emailAddress %>">
+            <% if (validationMessages.emailAddress) { %>
+                <span style="color: red;"><%= validationMessages.emailAddress %></span><br>
+            <% } %>
+        </div>
+
+        <div class="form-group">
+            <label for="password"></label>
+            <input type="password" placeholder="Password" id="password" name="password" class="form-control"
+                   value="<%= values.password %>">
+            <% if (validationMessages.password) { %>
+                <span style="color: red;"><%= validationMessages.password %></span><br>
+            <% } %>
+        </div>
+        <br>
+
+        <input type="submit" value="Sign up today">
+    </form>
+
+</div>

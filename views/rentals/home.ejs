@@ -1,0 +1,14 @@
+<% rentalsByCity.forEach(cityRental => { %>
+    <h2 class="cityProvince"><%= cityRental.cityProvince %></h2>
+    <div class="container" style="background-color: #007bff; margin-bottom: 30px">
+        <div class="row">
+            <% cityRental.rentals.forEach(rental => { %>
+            <div class="col-6">
+                <div class="rental-item card bg-indigo" style="margin-bottom: 10px">
+                    <%- include("../partials/rental", rental) %>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+    </div>
+<% }); %>

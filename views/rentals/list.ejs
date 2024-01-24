@@ -1,0 +1,29 @@
+<h1 style="color: white; text-align: center">Greetings clerk!</h1>
+
+<a href="/load-data">
+    <button>Load Data</button>
+</a>
+<a href="/rentals/add">
+    <button>Add Data</button>
+</a>
+
+<div class="featured">
+    <h2>List of Rentals</h2>
+    <div class="container background: #206255">
+        <div class="row">
+            <% rentals.forEach((rental, index) => { %>
+            <div class="col-sm-4">
+                <div class="rental-item card bg-indigo" style="margin-bottom: 10px">
+                <%- include("../partials/rental", rental) %>
+                    <a href="/rentals/edit/<%= rental._id %>">Edit</a>
+                    <a href="/rentals/remove/<%= rental._id %>">Remove</a>
+                </div>
+            </div>
+                <% if ((index + 1) % 3 === 0) { %>
+        </div>
+        <div class="row">
+            <% } %>
+            <% }); %>
+        </div>
+    </div>
+</div>

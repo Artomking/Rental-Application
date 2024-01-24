@@ -1,0 +1,10 @@
+<div class="container" style="margin-bottom: 30px;background: #206255">
+    <h1>Are you sure you want to delete <%=rental.headline%>?</h1>
+
+    <form method="post" action="/rentals/remove/<%=rental._id%>" id="remove" enctype="multipart/form-data">
+        <input type="submit" value="Remove Rental">
+        <br>
+        <a href="/rentals/list">Cancel Deletion</a>
+    </form>
+
+</div>

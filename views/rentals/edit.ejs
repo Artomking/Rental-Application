@@ -1,0 +1,48 @@
+<div class="container" style="margin-bottom: 30px;background: #206255">
+
+    <form method="post" action="/rentals/edit/<%=rental._id%>" id="edit" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="headline">Headline:</label>
+            <input type="text" placeholder="Headline" name="headline" id="headline" class="form-control" value="<%=rental.headline%>" required>
+        </div>
+        <div class="form-group">
+            <label for="numSleeps">Number of sleeping spaces:</label>
+            <input type="number" placeholder="0" name="numSleeps" id="numSleeps" min="0" max="100" class="form-control" value="<%=rental.numSleeps%>" required>
+        </div>
+        <div class="form-group">
+            <label for="numBedrooms">Number of bedrooms:</label>
+            <input type="number" placeholder="0" name="numBedrooms" id="numBedrooms" min="0" max="100" class="form-control" value="<%=rental.numBedrooms%>" required>
+        </div>
+        <div class="form-group">
+            <label for="numBathrooms">Number of bathrooms:</label>
+            <input type="number" placeholder="0" name="numBathrooms" id="numBathrooms" min="0" max="100" class="form-control" value="<%=rental.numBathrooms%>" required>
+        </div>
+        <div class="form-group">
+            <label for="pricePerNight">Price per night:</label>
+            <input type="number" placeholder="0.00" name="pricePerNight" id="pricePerNight" min="0.00" step="0.01" class="form-control" value="<%=rental.pricePerNight%>" required>
+
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" placeholder="City" name="city" id="city" class="form-control" value="<%=rental.city%>" required>
+
+        </div>
+        <div class="form-group">
+            <label for="province">Province:</label>
+            <input type="text" placeholder="Province" name="province" id="province" class="form-control" value="<%=rental.province%>" required>
+        </div>
+        <div class="form-group">
+            <label for="imageUrl">Image:</label>
+            <input type="file" placeholder="Image" name="imageUrl" id="imageUrl" class="form-control" accept="image/*">
+
+        </div>
+        <div class="form-group">
+            <label for="featuredRental">Featured Rental:</label>
+            <input type="checkbox" name="featuredRental" id="featuredRental" value="<%=rental.featuredRental%>">
+        </div>
+        <br>
+
+        <input type="submit" value="Edit Rental">
+    </form>
+
+</div>
